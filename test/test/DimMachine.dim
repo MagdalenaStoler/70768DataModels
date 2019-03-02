@@ -1,0 +1,286 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b7b59201-57ab-42d4-9f70-558b83bb5d2b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DimMachine</ID>
+  <Name>DimMachine</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1942ae9c-8949-4a39-9ab9-fdb8501ad337">
+    <DataSourceViewID>Contoso Retail DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="a47ec848-523b-427a-8a02-cbcb1ec1847d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="bb435b65-c4e0-489f-b7de-51700a892cd0">
+      <ID>Machine Key</ID>
+      <Name>Machine Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9d58e8c0-2edd-4d32-bfec-6e2d6699c7e9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="442078ff-9205-46e7-b749-3cc4f9f73e4c">
+            <TableID>olap_vDimMachine</TableID>
+            <ColumnID>MachineKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="eb31841a-b065-438d-812d-e22333dd7d00">
+          <AttributeID>Machine Label</AttributeID>
+          <Name>Machine Label</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c83d161c-1787-4bc6-a06f-aed221f36a2a">
+          <AttributeID>Machine Type</AttributeID>
+          <Name>Machine Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dee97924-e363-4ec5-b637-1cd308dea5e3">
+          <AttributeID>Machine Name</AttributeID>
+          <Name>Machine Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cc0baac9-41f5-40a9-83e1-ac58a28c9c0f">
+          <AttributeID>Machine Description</AttributeID>
+          <Name>Machine Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f3c96232-93fb-4e8a-a952-6f8629c9f36a">
+          <AttributeID>Vendor Name</AttributeID>
+          <Name>Vendor Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b1581d39-412c-4b73-834d-da7200a505a2">
+          <AttributeID>Machine OS</AttributeID>
+          <Name>Machine OS</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ee64d2de-5c66-4ec9-b55e-ba1ffe1adfc6">
+          <AttributeID>Machine Source</AttributeID>
+          <Name>Machine Source</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dae12597-39a7-48fd-a1ae-4cc3ca8c99d6">
+          <AttributeID>Machine Hardware</AttributeID>
+          <Name>Machine Hardware</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9766297a-a611-4a81-9938-013b9798866e">
+          <AttributeID>Machine Software</AttributeID>
+          <Name>Machine Software</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3f43a386-cfaa-499c-8268-1065c071e5e1">
+          <AttributeID>Status</AttributeID>
+          <Name>Status</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c1e975f1-c685-46a6-a9ad-692b30c1190e">
+      <ID>Machine Label</ID>
+      <Name>Machine Label</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7db2afa-e0b4-465d-b59b-409e3a4aa8d6">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa1e5529-1ab7-42b2-8f3e-41aceea6cd38">
+            <TableID>olap_vDimMachine</TableID>
+            <ColumnID>MachineLabel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0abe07ea-d6c2-4739-ad85-b86bb39f8bf5">
+      <ID>Machine Type</ID>
+      <Name>Machine Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a03204f3-9517-40d1-b582-acaa26d883b1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c59a4042-3fb1-4d80-a6bc-5ae6907feb0f">
+            <TableID>olap_vDimMachine</TableID>
+            <ColumnID>MachineType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5ef75965-17c1-44e5-aa2e-074783c84e9e">
+      <ID>Machine Name</ID>
+      <Name>Machine Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="41749f88-8ad9-4bd8-8c0d-52a8cf826512">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c163d6ee-b208-42f7-b8cb-8f2a09d9a89d">
+            <TableID>olap_vDimMachine</TableID>
+            <ColumnID>MachineName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bd914e79-10e7-41d3-b12a-0361033afbd0">
+      <ID>Machine Description</ID>
+      <Name>Machine Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8173beb8-d0bd-4faf-bc8b-f31c327ae9bd">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="47bbf719-c2ae-4917-b993-bceab77f6fda">
+            <TableID>olap_vDimMachine</TableID>
+            <ColumnID>MachineDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9cb430aa-c42f-43ad-a241-ff7cef6cb989">
+      <ID>Vendor Name</ID>
+      <Name>Vendor Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e017a560-ddcb-48b5-aabc-63742840950a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c13d700a-377c-468a-af73-f3138b160fbd">
+            <TableID>olap_vDimMachine</TableID>
+            <ColumnID>VendorName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2659eb13-4c16-40d4-a461-ee9ef99ae232">
+      <ID>Machine OS</ID>
+      <Name>Machine OS</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="585c045c-6b33-4606-85fa-728d2b44fe0f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51fb7d07-c21d-4537-819f-7a3cd8aa67dc">
+            <TableID>olap_vDimMachine</TableID>
+            <ColumnID>MachineOS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="75dcbdf8-b3dd-43e6-8138-8713ef6fdd1d">
+      <ID>Machine Source</ID>
+      <Name>Machine Source</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="18eea64b-c7a9-456c-9db2-4905739f88f9">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d08ea0af-d914-4826-b6ae-c79297851f34">
+            <TableID>olap_vDimMachine</TableID>
+            <ColumnID>MachineSource</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="db3f8811-a028-471a-a926-88a20958c96e">
+      <ID>Machine Hardware</ID>
+      <Name>Machine Hardware</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e125823e-0c21-489a-a9fd-7398fd6e77f7">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1938c26-a695-4890-8b01-082e1be20de1">
+            <TableID>olap_vDimMachine</TableID>
+            <ColumnID>MachineHardware</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f5846071-7b16-47be-90de-e911c1dd57dd">
+      <ID>Machine Software</ID>
+      <Name>Machine Software</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7f0ae4d4-26eb-4be8-864e-34d11fe47cd9">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43e8e81b-876b-410a-bb98-b6800857e0a5">
+            <TableID>olap_vDimMachine</TableID>
+            <ColumnID>MachineSoftware</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="157d59ee-26f9-42e5-9cc0-2f973536a308">
+      <ID>Status</ID>
+      <Name>Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1fac3e11-1ca0-4e94-8a47-c5c08d450810">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2dee81ab-7b86-4162-b4c4-611ce7eb7b6f">
+            <TableID>olap_vDimMachine</TableID>
+            <ColumnID>Status</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

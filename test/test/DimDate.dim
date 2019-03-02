@@ -1,0 +1,277 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8d379c67-5569-4f00-bcb6-2469ff41c5ab" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>v Dim Date</ID>
+  <Name>DimDate</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3801" scrolltop="-9102" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11832" y="21950" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vDimDate" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4191" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00005f100000a30e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="olap_vDimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3801</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-9102</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="85971979-308e-4629-8515-9de0c4b6c041">
+    <DataSourceViewID>Contoso Retail DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="4840d830-b71d-4518-929e-0a6f9fbd85a0">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="2812ac03-c633-4b79-bff5-61fc5aa0640c">
+      <ID>Datekey</ID>
+      <Name>Datekey</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6b8a0d6b-5db1-4d30-bd1f-e79cd572c8cf">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c18ae376-6f81-4f3a-891e-f30ec0a2a52a">
+            <TableID>olap_vDimDate</TableID>
+            <ColumnID>Datekey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6d2e80f0-2843-48f5-bd18-2f14d5a88589">
+          <AttributeID>Full Date Label</AttributeID>
+          <Name>Full Date Label</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="44f6480d-1840-4ba9-bac4-1afc36d99c3d">
+          <AttributeID>Date Description</AttributeID>
+          <Name>Date Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8ca99ca9-ced2-4273-a17e-bfc2bc2156e1">
+          <AttributeID>Calendar Year Label</AttributeID>
+          <Name>Calendar Year Label</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9f43057c-6044-4d1b-86fd-f08fc9e3f0fa">
+          <AttributeID>Calendar Half Year Label</AttributeID>
+          <Name>Calendar Half Year Label</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b0348c92-0ab6-4aa6-be9b-9809131bea3e">
+          <AttributeID>Calendar Quarter Label</AttributeID>
+          <Name>Calendar Quarter Label</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bc79fc31-5041-4bdb-bc4a-328b410377a3">
+          <AttributeID>Calendar Month Label</AttributeID>
+          <Name>Calendar Month Label</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2a64e21e-cebb-461f-a4ad-70de8ccebbbb">
+          <AttributeID>Is Work Day</AttributeID>
+          <Name>Is Work Day</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c20c9dec-2002-47b0-b446-e0c5bc7461bb">
+      <ID>Full Date Label</ID>
+      <Name>Full Date Label</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="255311e9-f9fc-4bd7-a1bb-05ad68477f7a">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="24a20be8-e06f-40fa-8aec-2108b661b7bc">
+            <TableID>olap_vDimDate</TableID>
+            <ColumnID>FullDateLabel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="34433571-9e26-458e-a42e-768c8498996a">
+      <ID>Date Description</ID>
+      <Name>Date Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="025bd36f-9030-4403-98ef-7532ab70da2e">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f989e1ba-01d8-433b-8820-3217fbda2478">
+            <TableID>olap_vDimDate</TableID>
+            <ColumnID>DateDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0e4c95f6-b739-49bb-973c-99431211fb24">
+      <ID>Calendar Year Label</ID>
+      <Name>Calendar Year Label</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="77a7ab58-1c4f-47ac-8459-ee71a5a27cd8">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f402de6-b0ff-4521-945a-f2ef640fa24b">
+            <TableID>olap_vDimDate</TableID>
+            <ColumnID>CalendarYearLabel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ee32b14c-cff2-4561-a5ca-86bf5c83acb9">
+      <ID>Calendar Half Year Label</ID>
+      <Name>Calendar Half Year Label</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3711cfda-f09a-43e4-8c0a-05657b921cb7">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40ccccbe-d7df-4121-b144-ac7dfd80bcc8">
+            <TableID>olap_vDimDate</TableID>
+            <ColumnID>CalendarHalfYearLabel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d84db3dd-4e81-443a-9b9e-1aaf5e3591c5">
+      <ID>Calendar Quarter Label</ID>
+      <Name>Calendar Quarter Label</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dea5b35d-0b38-44e3-bf60-2783e0690dbc">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e204b9d5-02b7-4d97-9a9f-a643e9e313e7">
+            <TableID>olap_vDimDate</TableID>
+            <ColumnID>CalendarQuarterLabel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="91e0ac8a-59e8-469a-9ee1-da153f762e9a">
+      <ID>Calendar Month Label</ID>
+      <Name>Calendar Month Label</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6d6b7ed8-31c7-423e-9d8a-899b57bc979b">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7a830165-bf7c-4232-8775-5c20365b5322">
+            <TableID>olap_vDimDate</TableID>
+            <ColumnID>CalendarMonthLabel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a9e079bb-19b6-48c7-ae29-3ac18cbf23a9">
+      <ID>Is Work Day</ID>
+      <Name>Is Work Day</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dd1efb92-8851-4535-a7a5-ce4db2e450e2">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dbcb5aa6-94a5-4f29-ab98-0159c43cbb1a">
+            <TableID>olap_vDimDate</TableID>
+            <ColumnID>IsWorkDay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="1ce9b7c5-7149-46a7-a038-db1a1818b712">
+      <ID>Hierarchy</ID>
+      <Name>DateHierarchy (YHQM)</Name>
+      <Levels>
+        <Level dwd:design-time-name="6c4ba476-7dfc-4b4b-a669-a5f32a7e1528">
+          <ID>Calendar Year Label</ID>
+          <Name>Calendar Year Label</Name>
+          <SourceAttributeID>Calendar Year Label</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="79b0188a-e9bf-47cb-ab49-7a1ee94ff07a">
+          <ID>Calendar Half Year Label</ID>
+          <Name>Calendar Half Year Label</Name>
+          <SourceAttributeID>Calendar Half Year Label</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4b64b79f-9e88-4a39-bf23-981f448b62b2">
+          <ID>Calendar Quarter Label</ID>
+          <Name>Calendar Quarter Label</Name>
+          <SourceAttributeID>Calendar Quarter Label</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="de2448e2-b210-4485-bf75-9fee36aead75">
+          <ID>Calendar Month Label</ID>
+          <Name>Calendar Month Label</Name>
+          <SourceAttributeID>Calendar Month Label</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
